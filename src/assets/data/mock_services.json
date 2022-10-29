@@ -1,0 +1,61 @@
+{
+    "service":[
+        {
+            "id": "000",
+            "serviceName": "mock0",
+            "priority": "high",
+            "alarm": false,
+            "color": "green"
+        },
+        {
+                "id": "001",
+                "serviceName": "archive",
+                "priority": "low",
+                "alarm": false,
+                "color": "green"
+        },
+        {
+            "id": "010",
+            "serviceName": "mock1",
+            "priority": "high",
+            "alarm": false,
+            "color": "green"
+        },
+        {
+            "id": "011",
+            "serviceName": "mock2",
+            "priority": "low",
+            "alarm": true,
+            "color": "green"
+        },
+        {
+            "id": "100",
+            "serviceName": "mock3",
+            "priority": "high",
+            "alarm": true,
+            "color": "green"
+        },
+        {
+            "id": "101",
+            "serviceName": "core",
+            "priority": "high",
+            "alarm": true,
+            "color": "green"
+        },
+        {
+            "id": "110",
+            "serviceName": "mock4",
+            "priority": "high",
+            "alarm": false,
+            "color": "green"
+        },
+        {
+            "id": "111",
+            "serviceName": "backup",
+            "priority": "high",
+            "alarm": false,
+            "color": "green"
+        }
+        
+    ]
+}

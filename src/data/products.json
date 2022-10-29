@@ -1,0 +1,45 @@
+{
+    "product":[
+        {
+            "id": "000",
+            "name": "mock0",
+            "color": "green"
+        },
+        {
+                "id": "001",
+                "name": "pc",
+                "color": "yellow"
+        },
+        {
+            "id": "010",
+            "name": "mock1",
+            "color": "green"
+        },
+        {
+            "id": "011",
+            "name": "mock2",
+            "color": "green"
+        },
+        {
+            "id": "100",
+            "name": "mock3",
+            "color": "green"
+        },
+        {
+            "id": "101",
+            "name": "drucker",
+            "color": "green"
+        },
+        {
+            "id": "110",
+            "name": "mock4",
+            "color": "green"
+        },
+        {
+            "id": "111",
+            "name": "Laptop",
+            "color": "green"
+        }
+        
+    ]
+}
