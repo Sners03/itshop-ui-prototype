@@ -35,6 +35,8 @@ export default {
           <RouterLink to="/shop">Shop</RouterLink>
           <RouterLink v-if="employee" to="/employee">Aufträge</RouterLink>
           <RouterLink v-if="employee" to="/contract">Aktueller Auftrag</RouterLink>
+          <RouterLink v-if="employee" to="/management/employee">Mitarbeitermanagement</RouterLink>
+          
           <RouterLink to="/about">FAQ</RouterLink>
 
       </div>

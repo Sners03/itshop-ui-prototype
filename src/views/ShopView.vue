@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
     </div>
   </header>
-  Willkommen
+  <RouterView></RouterView>
 </template>
 
 <style scoped>

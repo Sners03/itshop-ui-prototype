@@ -2,14 +2,17 @@ import { createRouter, createWebHistory } from 'vue-router'
 import ShopView from '../views/ShopView.vue'
 import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/LoginView.vue'
-import RegisterView from '../views/LoginView.vue'
+import RegisterView from '../views/RegisterView.vue'
 import WarenkorbView from '../views/WarenkorbView.vue'
 import MyAccountView from '../views/MyAccountView.vue'
 import KomplettsystemView from '../views/KomplettsystemView.vue'
 import VerbrauchssystemView from '../views/VerbrauchssystemView.vue'
 import ZubehoerView from '../views/ZubehoerView.vue'
 import ProductView from "../views/ProductView.vue"
+import ProductEditorView from "../views/ProductEditorView.vue"
 import EmployeeView from "../views/EmployeeView.vue"
+import EmployeeManagementView from "../views/EmployeeManagement.vue"
+import EmployeeEditorView from "../views/EmployeeEditor.vue"
 
 import ContractView from "../views/ContractView.vue"
 
@@ -24,22 +27,24 @@ const router = createRouter({
     {
       path: '/shop',
       name: 'shop',
-      component: ShopView
-    },
-    {
-      path: '/shop/komplettsysteme',
-      name: 'fullsystem',
-      component: KomplettsystemView
-    },
-    {
-      path: '/shop/verbrauchssystem',
-      name: 'usesystem',
-      component: VerbrauchssystemView
-    },
-    {
-      path: '/shop/zubehoer',
-      name: 'zubehoer',
-      component: ZubehoerView
+      component: ShopView,
+      children: [
+        {
+          path: 'komplettsysteme',
+          name: 'fullsystem',
+          component: KomplettsystemView
+        },
+        {
+          path: 'verbrauchssystem',
+          name: 'usesystem',
+          component: VerbrauchssystemView
+        },
+        {
+          path: 'zubehoer',
+          name: 'zubehoer',
+          component: ZubehoerView
+        }
+      ]
     },
     {
       path: '/about',
@@ -53,6 +58,16 @@ const router = createRouter({
       path: '/login',
       name: 'login',
       component: LoginView
+    },
+    {
+      path: '/management/employee',
+      name: 'employeemanagement',
+      component: EmployeeManagementView
+    },
+    {
+      path: '/management/employee/new',
+      name: 'employeeeditor',
+      component: EmployeeEditorView
     },
     {
       path: '/register',
@@ -82,6 +97,11 @@ const router = createRouter({
       component: ContractView
     }
     ,
+    {
+      path: '/editor',
+      name: 'editor',
+      component: ProductEditorView
+    },
     {
       path: "/shop/:name",
       name: "product",

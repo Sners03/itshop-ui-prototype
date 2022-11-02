@@ -3,15 +3,7 @@ import HelloWorld from '../components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <div class = left>
-          <RouterLink to="/shop/komplettsysteme">Komplettsysteme</RouterLink>
-          <RouterLink to="/shop/verbrauchssystem">Verbrauchssysteme</RouterLink>
-          <RouterLink to="/shop/zubehoer">Zubehör</RouterLink>
-      </div>
-    </div>
-  </header>
+  
 </template>
 
 <style scoped>

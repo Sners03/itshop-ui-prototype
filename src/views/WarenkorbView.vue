@@ -27,6 +27,13 @@ import HelloWorld from '../components/HelloWorld.vue'
         <td> 2199,99EUR</td>
       </tr>
     </table>
+    <label for="rabatt">Rabattcode wählen: </label>
+      <select name="rabatt" id="rabatt">
+        <option value="10prozent">10%</option>
+        <option value="20prozent">20%</option>
+        <option value="50Euro">50 €</option>
+        <option value="100Euro">100 €</option>
+      </select>
     <button>
       Kaufen
     </button>

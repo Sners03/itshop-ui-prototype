@@ -19,15 +19,8 @@ return{
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <div class = left>
-          <RouterLink to="/shop/komplettsysteme">Komplettsysteme</RouterLink>
-          <RouterLink to="/shop/verbrauchssystem">Verbrauchssysteme</RouterLink>
-          <RouterLink to="/shop/zubehoer">Zubehör</RouterLink>
-      </div>
-    </div>
-  </header>
+
+    
   <p v-if="!products">Loading...</p>
   <div class="container" v-else>
     <ul>
